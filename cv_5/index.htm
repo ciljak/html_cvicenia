@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Images and appropriate  HTML 5</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="HTML lists" content="Basic info about HTML images and way how to style them.">
+    </head>
+
+    <body>
+        <h1 id="part_top">Images in HTML 5 and ways how to style them with CSS3</h1>
+        <h3>Example image with atributes for alternative text and title</h3>
+        <img class="img-500px" src="images/spare_parts.jpg" alt="Spare parts printed on Prusa I3 MK3S - alt text." title="Spare parts printed for 3D printer as a backup
+                 in case of partial demage of printer. This is a title element for providing further information about the image.">
+
+        <h1>3D print image gallery</h1>
+        <img class="gallery" src="images/leshen.jpg" alt="Leshen form Witcher saga">
+        <img class="gallery" src="images/ciri.jpg" alt="Ciriform Witcher saga">
+        <img class="gallery" src="images/geralt.jpg" alt="Geralt form Witcher saga">
+        <img class="gallery" src="images/elsa.jpg" alt="Elsa 3D print">
+        <img class="gallery" src="images/mars_rover.jpg" alt="Mars rover 3D print">
+        <img class="gallery" src="images/dragon.jpg" alt="Dragon 3D print">
+        <img class="gallery" src="images/troll1.jpg" alt="Troll from Witcher saga">
+
+    <div class="article_bellow_gallery">
+        <h1>Inline vs block behavior of img element on page</h1>
+
+        <h3>Clasic inline behaviour</h3>
+        <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla porttitor accumsan tincidunt. 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus suscipit tortor eget felis porttitor volutpat. 
+            Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Sed porttitor lectus nibh.</p>
+
+        <p> Vivamus suscipit tortor eget felis porttitor volutpat. Donec sollicitudin molestie malesuada.
+             Lorem ipsum dolor sit amet, <img  class="inline" src="images/mars_rover.jpg" alt="Mars rover 3D print"> consectetur adipiscing elit. Donec sollicitudin molestie malesuada. 
+             Quisque velit nisi, pretium ut lacinia in, elementum id enim. Pellentesque in ipsum id orci porta dapibus.</p>
+            
+        <p>Curabitur aliquet quam id dui posuere blandit. Vivamus magna justo, lacinia eget consectetur sed, 
+            convallis at tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; 
+            Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Curabitur arcu erat, 
+            accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. 
+            Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p>
+
+        <h3>Img as block element</h3>
+        <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla porttitor accumsan tincidunt. 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus suscipit tortor eget felis porttitor volutpat. 
+            Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Sed porttitor lectus nibh.</p>
+
+        <p> Vivamus suscipit tortor eget felis porttitor volutpat. Donec sollicitudin molestie malesuada.
+             Lorem ipsum dolor sit amet, <img class="block" src="images/mars_rover.jpg" alt="Mars rover 3D print"> consectetur adipiscing elit. Donec sollicitudin molestie malesuada. 
+             Quisque velit nisi, pretium ut lacinia in, elementum id enim. Pellentesque in ipsum id orci porta dapibus.</p>
+            
+        <p>Curabitur aliquet quam id dui posuere blandit. Vivamus magna justo, lacinia eget consectetur sed, 
+            convallis at tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; 
+            Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Curabitur arcu erat, 
+            accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. 
+            Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p>
+
+            <h3>Align of the imaget</h3>
+        <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla porttitor accumsan tincidunt. 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus suscipit tortor eget felis porttitor volutpat. 
+            Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Sed porttitor lectus nibh.</p>
+
+        <p> Vivamus suscipit tortor eget felis porttitor volutpat. Donec sollicitudin molestie malesuada.
+             Lorem ipsum dolor sit amet, <img class="img-250px" src="images/mars_rover.jpg" alt="Mars rover 3D print" align="right"> consectetur adipiscing elit. Donec sollicitudin molestie malesuada. 
+             Quisque velit nisi, pretium ut lacinia in, elementum id enim. Pellentesque in ipsum id orci porta dapibus.</p>
+            
+        <p><img class="img-250px" src="images/mars_rover.jpg" alt="Mars rover 3D print" align="left">Curabitur aliquet quam id dui posuere blandit. Vivamus magna justo, lacinia eget consectetur sed, 
+            convallis at tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; 
+            Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Curabitur arcu erat, 
+            accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. 
+            Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p>
+
+
+         <h1>Figure and Figure caption in HTML 5 </h1>  
+         <p>Because images often come with caption. HTML 5 introduced new figures element to contain image and the caption. 
+             This element can be used also for other block content as graphs, embedded videos etc. .</p> 
+             
+          <figure>
+            <img class="img-250px" src="images/spare_parts.jpg" alt="Photo of currently printed spare parts for Prusa i3 MK3S 3D printer." >
+            <br />
+            <figcaption>"Photo of currently printed spare parts for Prusa i3 MK3S 3D printer.</figcaption>
+          </figure>   
+    </div>    
+
+        
+       
+        
+    </body>
+
+</html>

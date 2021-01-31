@@ -1,0 +1,79 @@
+body {
+    background-image: url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment:fixed;   /* A way how to mak image fixet at the bottom, upper content scroll upon them. */
+    background-position: center center ;
+
+                                   /* spreading image at the bottom of the page */
+    /* -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */
+}
+
+.img-500px {
+    width: 500px;
+}
+.img-250px {
+    width: 250px;
+    padding: 10px;
+    background-color: lightblue;
+    margin: 0px 10px 0px 10px;
+}
+
+h1 {
+    text-align: center ;
+}
+
+img.gallery { /* styling images in to a simple static image gallery with float behavior */
+    
+    height: 250px;
+    float: left;
+    margin: 10px;
+    padding: 10px ;
+    border: gray 2px dotted;
+    background-color: rgb(163, 163, 163);
+}
+
+img.block {
+    width: 330px;
+    height: 250px;
+    
+    display: block; /* example how to change behavior of image from inline to block element */
+
+    margin-right: 10px;
+    padding: 5px ;
+    border: gray 2px dotted;
+    background-color: gray;
+}
+
+img.inline { /* this is default behaviour, only height and width was set for consistent heights of images for further comparisn. */
+    width: 330px;
+    height: 250px;
+                         /* display: block is here omitted*/
+    margin-right: 10px;
+    padding: 5px ;
+    border: gray 2px dotted;
+    background-color: gray;
+}
+
+.article_bellow_gallery { /* separate div - create block element for putting content below image galeri in float flow order. */
+    float: left;
+}
+
+figure {
+    float: left; /* In this case enable adding picture in figure in a "flow" on the page rather as positioning them im clasic block flow. 
+                    This lead to overlaping items.
+                    This is first example, in real page is this behaviour prevented by proper page layout and embedding elements in
+                    well prepared structure of buildng blocks :-)  */
+}
+
+figcaption {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    padding: 5px ;
+    /* border: gray 2px dotted; */
+    background-color: rgb(200, 231, 241);
+    align-self: center;
+    
+}

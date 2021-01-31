@@ -1,0 +1,27 @@
+ol.ol-style {
+    list-style-type:upper-roman;
+}
+
+#ul-style {
+    list-style-type:square;
+}
+
+#own-ul-images {
+    list-style-image: url("images/ulimage.png");
+}
+
+ li.li-margin {
+   margin: 10px 0px 0px 40px;
+   
+} 
+
+ol.outside {
+   list-style-position: outside;
+   
+    
+ }
+
+ ol.inside {
+    list-style-position: inside;
+     
+  }

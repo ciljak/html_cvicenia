@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Links and how to use them in HTML 5</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="HTML lists" content="Basic info about HTML links and a a tag.">
+    </head>
+
+    <body>
+        <h1 id="part_top">Links and how to use them</h1>
+
+        <p>Article will focus links in HTML documents and variety of usage examples.</p>
+
+        <h2>Simple link pointing to page on web</h2>
+        <a href="https://www.csfd.cz">CSFD - Šeskoslovenská filmová databáza</a>
+
+        <h2>Link applied as wrap onto a other element - list item in this example</h2>
+        <ul>
+            <li><a href="embedded_directory/embedded_file.htm">Link to a page in a child folder /embedded_directory/embedded_file.htm</a> </li>
+            <li><a href="mailto:example@example.com">e-mail link to example@example.com</a></li>
+            <li><a href="embedded_directory/embedded_file.htm" target="_blank">Opening link in a new window</a> </li>
+            <li>Item of unordered list</li>
+            <li>Item of unordered list</li>
+        </ul>
+
+        
+        <h2>Linking on a specific part of the same page</h2>
+        <p>This is used for pointing on important parts in a long page.</p>
+        <p>Before you can link to a part of a page, you need to identify the points in the page. 
+           For this is used id attribute (can be used on every HTML element).</p>
+        <ol>
+            <li>item of list</li>
+            <li>item of list</li>
+            <ol class="ol-style">
+                <li><a href="#part_I">Link pointing to a Part I</a></li>
+                <li><a href="#part_II">Link pointing to a Part II</a></li>
+                <li><a href="#part_III">Link pointing to a Part III</a></li>
+                
+            </ol>
+            <li>item of list</li>
+            <li>item of list</li>
+            <li>item of list</li>
+        </ol>
+
+        <h2>Styling links with CSS3</h2>
+        <ul class="margin_for_ul">
+            <li class="margin_for_li" ><a class="my_link_style_1" href="embedded_directory/embedded_file.htm">Link to a page in a child folder /embedded_directory/embedded_file.htm</a> </li>
+            <li class="margin_for_li"><a class="my_link_style_2" href="mailto:example@example.com">e-mail link to example@example.com</a></li>
+            <li class="margin_for_li"><a class="my_link_style_3" href="embedded_directory/embedded_file.htm" target="_blank">Opening link in a new window</a> </li>
+            
+        </ul>
+
+        <br /><br /><br /><br /><br /><br /><br /><br /> <!-- Indent on page for seting page landing parts-->
+        <h3>Landing part I for links to a part on the same page.</h3>
+        <a href="#part_top" id="part_I">return to a upper part of the page id marked as part_top.</a>
+
+        <br /><br /><br /><br /><br /><br /><br /><br /> <!-- Indent on page for seting page landing parts-->
+        <h3>Landing part II for links to a part on the same page.</h3>
+        <a href="#part_top" id="part_II">return to a upper part of the page id marked as part_top.</a>
+
+        <br /><br /><br /><br /><br /><br /><br /><br /> <!-- Indent on page for seting page landing parts-->
+        <h3>Landing part III for links to a part on the same page.</h3>
+        <a href="#part_top" id="part_III">return to a upper part of the page id marked as part_top.</a>
+
+        <br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br />
+        
+        <br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br />
+
+        
+       
+        
+    </body>
+
+</html>

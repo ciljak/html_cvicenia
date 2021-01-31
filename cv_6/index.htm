@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Tables and appropriate  HTML 5</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="HTML tables" content="Basic info about HTML tables and way how to style them.">
+    </head>
+
+    <body>
+        <h1>Tables in HTML 5 and ways how to style them with CSS3</h1>
+        <p>All tabels are created from rows and columns. We will cover how to
+            use key elements table, tr, td, make borders and align with appropriate CSS3 styles.
+            because it was not mentioned in previous articles. Make look of the element is in nowdays 
+            work for style not with HTML atributes, please keep that in mind.
+        </p>
+
+        <h2>Simple unstructured table</h2>
+
+        <table> <!-- main table HTML tag -->
+            <tr> <!-- tr is a row in a table -->
+                <th></th>
+                <th scope="col">MO</th> <!-- th define a head cell of table, is a "td for a head marked cell"-->
+                <th scope="col">TU</th>
+                <th scope="col">WE</th>
+                <th scope="col">TH</th>
+                <th scope="col">TR</th>
+                <th scope="col">SA</th>
+                <th scope="col">SU</th>
+
+            </tr>
+               
+            <tr>
+                <th scope="row">Row 1</th> <!-- for appropriate diferentiation between row and column head cell we define scope="row or col"-->
+                <td>MAT</td> <!-- td is a cell in a table -->
+                <td>GEO</td>
+                <td>-</td>
+                <td>LNG</td>
+                <td>CHE</td>
+                <td>BIO</td>
+                <td>PHY</td>
+                
+            </tr>
+
+            <tr>
+                <th scope="row">Row 2</th>
+                <td>-</td>
+                <td>INF</td>
+                <td>LNG</td>
+                <td>BIO</td>
+                <td>MAT</td>
+                <td>-</td>
+                <td>ELC</td>
+                
+            </tr>
+
+        </table>
+
+        <br />
+
+        <h2>Spanning columns or rows</h2>
+
+        <table> <!-- main table HTML tag -->
+            <tr> <!-- tr is a row in a table -->
+                <th></th>
+                <th scope="col">MO</th> <!-- th define a head cell of table, is a "td for a head marked cell"-->
+                <th scope="col">TU</th>
+                <th scope="col">WE</th>
+                <th scope="col">TH</th>
+                <th scope="col">TR</th>
+                <th colspan="2" scope="col">Wekend</th> <!-- colspan wit number of cells describe number of interconnected cells of a table -->
+                
+
+            </tr>
+               
+            <tr>
+                <th scope="row">Row 1</th> <!-- for appropriate diferentiation between row and column head cell we define scope="row or col"-->
+                <td>MAT</td> <!-- td is a cell in a table -->
+                <td>GEO</td>
+                <td>-</td>
+                <td>LNG</td>
+                <td rowspan="2">BIO</td>
+                <td>BIO</td>
+                <td>PHY</td>
+                
+            </tr>
+
+            <tr>
+                <th scope="row">Row 2</th> <!-- rowspan and number of rows describe number of merged cells in a row -->
+                <td>-</td>
+                <td>INF</td>
+                <td>LNG</td>
+                <td>BIO</td>
+                
+                <td>-</td>
+                <td>ELC</td>
+                
+            </tr>
+
+        </table>
+
+
+        <h2>Thead, Tbody and Tfoot for long tables</h2>
+
+        <table> <!-- main table HTML tag -->
+           <thead>
+               <tr>
+                   <th>Day</th>
+                   <th>Temperature</th>
+                   <th>MAX-MIN</th>
+               </tr>
+
+           </thead>
+
+           <tbody>
+                <tr>
+                    <th>1.1.2020</th>
+                    <td>2.5</td>
+                    <td>7.5</td>
+                </tr>
+                <tr>
+                    <th>1.2.2020</th>
+                    <td>0.5</td>
+                    <td>9.5</td>
+                </tr>
+                <tr>
+                    <th>...</th>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+
+
+
+           </tbody>
+
+           <tfoot>
+                <tr>
+                    <th>Averages per month  </th>
+                    <td>-5.2</td>
+                    <td>16.2.5</td>
+                </tr>
+
+
+           </tfoot>
+
+        </table>
+
+
+        <h2>Well formated table with external css</h2>
+        <table class="tableexample">
+            <tr class="trexample">
+                <th class="thexample">Movie</th>
+                <th class="thexample">Director</th>
+                <th class="thexample">Introduced in year</th>
+                <th class="thexample">Box office $</th>
+            </tr>
+            <tr class="trexample">
+                <td >Seven</td>
+                <td >David Fincher</td>
+                <td >1995</td>
+                <td class="money">$150,000,000</td>
+            </tr >
+            <tr class="trexample">
+                <td >Forrest Gump</td>
+                <td >Robert Zemeckis</td>
+                <td >1994</td>
+                <td class="money">$270,000,000</td>
+            </tr >
+            <tr class="trexample">
+                <td >Pulp Fiction</td>
+                <td >Quentin Tarantino</td>
+                <td >1994</td>
+                <td class="money">$180,000,000</td>
+            </tr >
+            <tr class="trexample">
+                <td >The Dark Knight</td>
+                <td >Christopher Nolan</td>
+                <td >2008</td>
+                <td class="money">$450,000,000</td>
+            </tr >
+
+            
+
+
+        </table>
+
+            <br />
+            <a href="onlytable.htm"> for simplifiing styling of  a table, we created another onetable scenario --> </a>
+        
+
+        
+       
+        
+    </body>
+
+</html>

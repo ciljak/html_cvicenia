@@ -1,0 +1,18 @@
+.width_600_and_center {
+    width: 600px;
+    margin: 0px auto;
+
+    background-color: lightgoldenrodyellow;
+    padding: 5px 10px 5px 10px;
+}
+
+.green_background {
+    background-color: lightgreen;
+    text-align: justify;
+}
+
+#unique_inline_identifier_with_ID {
+    text-transform: uppercase;
+    color: maroon;
+    
+}

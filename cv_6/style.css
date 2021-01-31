@@ -1,0 +1,59 @@
+/* simple coloring of table elements for further diferentiation between cells of a table*/
+td {
+   background-color: rgb(204, 201, 201); 
+}
+
+th {
+    background-color: rgb(214, 255, 153); 
+ }
+
+
+
+ /* formating for thead and tfoot in large table example */
+ thead {
+    
+    color: firebrick;
+ }
+
+
+
+ tfoot {
+    color: firebrick;
+ }
+
+ /* well external formated table aplied part */
+
+ table.tableexample {
+      width: 600px;
+ }
+
+ th.thexample, td.tdexample {
+      padding: 7px 10px 10px 10px;
+ }
+
+ th.thexample {
+     text-transform: uppercase;
+     letter-spacing: 0.1em;
+     font-size: 90%;
+     border-bottom: 2px solid #111111;
+     border-top: 1px solid #999;
+     text-align: left;
+
+    
+     
+ }
+
+ th.thexample, th.even {
+     background-color: #efefef;
+ }
+
+
+
+ tr.trexample:hover {
+    background-color: #c3e6e5;
+}
+
+.money {
+    text-align: right;
+}
+ 

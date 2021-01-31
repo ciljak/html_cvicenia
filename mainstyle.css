@@ -1,0 +1,5 @@
+/* Part I. main page blocks arangement */
+.page_wrapper_1080px { /* main page wraper is centered and width is 180px */
+    width: 1080px;
+    margin: 0px auto;
+}
