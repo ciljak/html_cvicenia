@@ -1,0 +1,174 @@
+/* I. main body part formating styles */
+body {
+    background-color: #c7baa7;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-image: url(images/background.jpg);
+    background-repeat: no-repeat;
+    /* background-attachment:fixed; */  /* A way how to mak image fixet at the bottom, upper content scroll upon them. */
+    background-position: center center ;
+
+                                   /* spreading image at the bottom of the page */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+}
+
+.page_wrapper {
+    width: 1080px;
+    margin: 0px auto;
+    
+    
+}
+
+h1 {
+    color: #4b4b4b;
+    padding-left: 5px;
+    border-left: 5px rgb(39, 39, 39) solid;
+}
+
+h2 {
+    color: #757575;
+    padding-left: 5px;
+    border-left: 5px rgb(73, 73, 73) solid;
+}
+
+
+/* Header and nav styling section */
+#main_logo {
+    width: 250px;
+    margin: 10px 0px 15px 40px;
+}
+
+nav {
+    background-color: #777066;
+    opacity: 0.9;
+    padding: 15px 0px 5px 0px;
+    margin-bottom: 15px;
+}
+
+.nav_links {
+    text-decoration: none;
+    color: rgb(211, 211, 211);
+    
+}
+.nav_links:hover {
+    text-decoration: none;
+    color: white;
+
+    background-color: rgb(173, 164, 164);
+    padding: 10px 10px 25px 10px;
+    font-size: 21px;
+    
+}
+
+
+
+li.main_menu {
+    display: inline;
+    padding: 0.5em;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+
+    
+}
+
+.active_link { /* for page marked as active in HTML, it mean that appropriate page currently visited by user. */
+    font-weight: bolder;
+    padding-bottom: 10px;
+    color: white;
+}
+
+/* III. main page content in section and sidebar */
+section {
+    float: left;
+    width: 760px;
+
+    background-color: white;
+    opacity: 0.9;
+    margin: 10px 10px 0px 0px;
+    padding: 10px;
+}
+
+aside {
+    float: left;
+    width: 270px;
+    /*  background-color: yellow; */
+    margin-top: 10px;
+    padding: 10px;
+    
+}
+
+.aside_li {
+    list-style-type: none;
+    margin: 5px 0px 5px 0px;
+    padding: 10px;
+
+   
+}
+.aside_links {
+     text-decoration: none;
+     color: rgb(94, 94, 94);
+
+     font-size: 18px;
+     font-weight: bold;
+     text-transform:capitalize;
+
+     padding-left: 5px;
+    border-left: 5px rgb(110, 110, 110) solid;
+
+     
+}
+
+.aside_links:hover {
+    text-decoration: none;
+   color: rgb(122, 121, 121);
+   font-size: 24px;
+   margin-left: 15px;
+}
+
+aside h3 {
+    color: rgb(124, 124, 124);
+    font-size: 28px;
+    text-transform:capitalize;
+
+    padding-left: 5px;
+    border-left: 5px rgb(73, 73, 73) solid;
+}
+
+/* IV. Footer part styling */
+footer {  /* footer will be located beneath a  section and aside. For proper ordering, also flow must be changed to float: left. Clear will
+             solve optional problems with inciding ends of elemnts into a footer area. */
+    clear: both;
+    float: left; 
+    width: 1060px;
+
+    background-color:#a19076;
+    opacity: 0.7;
+    /*margin-top: 5px; */
+    padding: 10px;
+}
+
+.column_1_3, .column_2_3, .column_3_3 {
+    float: left;
+    width: 30%;
+    margin-right: 5px; 
+    padding: 5px 5px 5px 5px;
+}
+
+.footer_li2 {
+    list-style-type: none;
+}
+.footer_links {
+    text-decoration: none;
+    color: rgb(230, 230, 230);
+
+    font-size: 18px;
+    
+    
+}

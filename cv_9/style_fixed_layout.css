@@ -1,8 +1,4 @@
-/* Part I. main page blocks arangement */
-.page_wrapper_1080px { /* main page wraper is centered and width is 180px */
-    width: 1080px;
-    margin: 0px auto;
-}
+/* FIXED LAYOUT STYLE */
 
 /* I. main body part formating styles */
 body {
@@ -91,7 +87,7 @@ li.main_menu {
 }
 
 /* III. main page content in section and sidebar */
-#content {
+section {
     float: left;
     width: 760px;
 
@@ -103,7 +99,7 @@ li.main_menu {
 
 aside {
     float: left;
-    width: 270px;
+    width: 250px;
     /*  background-color: yellow; */
     margin-top: 10px;
     padding: 10px;

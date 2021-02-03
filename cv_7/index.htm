@@ -21,7 +21,7 @@
         <form action="example_script.php" method="POST" id="my_example_form">
 
             <p> Username:
-                <input type="text" name="username" size="20" maxlength="30" />
+                <input type="text" name="username" size="30" maxlength="30" />
             </p>
 
             <p> Password:
@@ -35,8 +35,8 @@
 
             <p>Select your option here - radio button:
                 <br />
-                <input type="radio" name="option" value="Option 1" checked="checked" /> <!-- this radio button is checked -->
-                <input type="radio" name="option" value="Option 2"  />
+                <input type="radio" name="option" value="Option 1"  /> <!-- this radio button is checked -->
+                <input type="radio" name="option" value="Option 2"  checked="checked" />
                 <input type="radio" name="option" value="Option 2"  />
 
             </p>
@@ -55,6 +55,7 @@
                     <option value="Option 1">Text for option 1</option>
                     <option value="Option 2">Text for option 2</option>
                     <option value="Option 3" selected="selected">Text for option 3</option>
+                    <option value="Option 4">Text for option 4</option>
 
 
                 </select>
@@ -63,10 +64,11 @@
 
             <p>Select your option here - select in <ins>box</ins> behavior (option3 is selected by default):
                 <br />
-                <select name="option3" id="option3" size="3"  multiple="multiple">
-                    <option value="Option 1">Text for option 1</option>
+                <select name="option3" id="option3" size="4"  multiple="multiple">
+                    <option value="Option 1" selected="selected">Text for option 1</option>
                     <option value="Option 2">Text for option 2</option>
                     <option value="Option 3" selected="selected">Text for option 3</option>
+                    <option value="Option 4">Text for option 4</option>
 
 
                 </select>
@@ -101,20 +103,20 @@
             <br /> <br />
             <p>Image button and hidden controls</p>
             <form action="index2.php" method="POST">
-                <button> <img src="images/subscribe.png" alt="Subscribe to youtube" width="180"> Subscribe </button>
+                <button> <img src="images/subscribe.png" alt="Subscribe to youtube" width="180" /> Subscribe </button>
                 <input type="hidden" name="hidden_passed_value" value="37.7">
             </form>
 
             <h2>Grouping form elements + form validation</h2>
 
             <fieldset>
-                <legend>Group name is here</legend>
+                <legend>Group name is here:</legend>
 
                 <label for="e-mail">e-mail: <br />
                 <input type="text" name="e-mail"></label> <br /> <br />
-                <label for="e-mail">name: <br />
+                <label for="username">name: <br />
                 <input type="text" name="username"></label> <br />
-                <label for="e-mail">password: <br />
+                <label for="password">password: <br />
                 <input type="password" name="password" required="required"></label> <br />
                 <br />
                 <input type="submit" name="subscribe" value="Log-in">

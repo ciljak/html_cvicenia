@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+         <title>A fixed layout with div description of page structure</title>
+         <style>
+             body { /* in fixed layout width of main boxes is usualy specified in pixels */
+                 width: 960px;
+                 margin: 0 auto;
+             }
+             #content {
+                 overflow: auto;
+                 height: 100%;
+             }
+             #nav, #feature, #footer {
+                 background-color: darkgrey;
+                 padding: 10px;
+                 margin: 10px;
+             }
+             .column1, .column2, .column3 {
+                 background-color: darkgrey;
+                 width: 300px;
+                 float: left; 
+                 margin: 10px;
+             }
+             li {
+                 display: inline; 
+                 padding: 5px;
+                 list-style-type: none;
+             }
+             
+
+
+             p {
+                text-align: center;
+             }
+         </style>
+    </head>
+
+    <body>
+        <h1>A fixed layout with div description of page structure</h1>
+        <div id="nav">
+            <ul>
+                <li><a href=""></a> Home </li>
+                <li><a href=""></a> Page 1 </li>
+                <li><a href=""></a> Page 2 </li>
+                <li><a href=""></a> Page 3 </li>
+            </ul>
+
+        </div>
+
+        <div id="content">
+            <div id="feature">
+                <p>Central block spreading to ful width</p>
+            </div>
+            <div class="column1">
+                <p>Column one</p>
+            </div>
+            <div class="column2">
+                <p>Column two</p>
+            </div>
+            <div class="column3">
+                <p>Column three</p>
+            </div>
+        </div>
+
+        <div id="footer">
+            <p>&copy; Footer with Copyright spreading at the bottom of the page</p>
+
+        </div>
+        
+    </body>
+
+</html>
+

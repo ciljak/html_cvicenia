@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+         <title>A liquid layout with div description of page structure</title>
+         <style>
+             body { /* in liquid layout width of main boxes is usualy specified in percentages */
+                 width: 80%;
+                 margin: 0 auto;
+             }
+             #content {
+                 overflow: auto;
+                 /* height: 100%; */
+             }
+             #nav, #feature, #footer {
+                 
+                 margin: 1%;
+             }
+             .column1, .column2, .column3 {
+                 background-color: darkgrey;
+                 width: 31%;
+                 float: left;
+                 margin: 1%;
+             }
+             .column3 { margin-right: 0%;}
+             li {
+                 display: inline;
+                 padding: 0.5em;
+             }
+             #nav, #footer {
+                 background-color: darkgrey;
+                 padding: 0.5em 0;
+            }
+            #feature, .article {
+                height: 10em;
+                margin-bottom: 1em;
+                background-color: darkgrey;
+            }
+
+            p {
+                text-align: center;
+            }
+
+
+         </style>
+    </head>
+
+    <body>
+        <h1>A liquid layout with div description of page structure</h1>
+        <div id="nav">
+            <ul>
+                <li><a href=""></a> Home </li>
+                <li><a href=""></a> Page 1 </li>
+                <li><a href=""></a> Page 2 </li>
+                <li><a href=""></a> Page 3 </li>
+            </ul>
+
+        </div>
+
+        <div id="content">
+            <div id="feature">
+                <p>Central block spreading to ful width</p>
+            </div>
+            <div class="column1">
+                <p>Column one</p>
+            </div>
+            <div class="column2">
+                <p>Column two</p>
+            </div>
+            <div class="column3">
+                <p>Column three</p>
+            </div>
+        </div>
+
+        <div id="footer">
+            <p>&copy; Footer with Copyright spreading at the bottom of the page</p>
+
+        </div>
+        
+    </body>
+
+</html>
+
